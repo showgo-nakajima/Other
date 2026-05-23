@@ -74,6 +74,27 @@
       <span>Selected Works</span>
       <span class="h-[1px] bg-slate-200 flex-grow"></span>
     </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Work 1 -->
+      <div class="minimal-card rounded-xl p-4 flex flex-col justify-between h-full">
+        <!-- 自動スクロールカルーセルのコンテナ（相対配置） -->
+        <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-100 border border-slate-100 md-4 relative group">
+          <!-- スライドを包むインナー。span機能でスワイプ感も心地よく -->
+          <div class="flex w-full h-full overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar" id="carousel-1">
+            <div class="w-full h-full shrink-0 snap-start">
+              <img src="https://placehold.co/600x450/3b82f6/FFFFFF?text=UI/UX+Console+1" alt="Console UI A" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-full shrink-0 snap-start">
+              <img src="https://placehold.co/600x450/1d4ed8/FFFFFF?text=UI/UX+Console+2" alt="Console UI B" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-full shrink-0 snap-start">
+              <img src="https://placehold.co/600x450/60a5fa/FFFFFF?text=UI/UX+Console+3" alt="Console UI C" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
  </main>
  </body>
