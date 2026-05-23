@@ -33,3 +33,7 @@ body {
  -ms-overflow-style: none;
  scrollbar-width: none;
 }
+
+.m-btm-20px {
+ margin-bottom: 20px;
+}
