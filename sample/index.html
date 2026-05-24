@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>AVAILABLE</title>
  <!-- ==================================================================== -->
  <!-- EXTERNAL LIBRARIES & FONTS                                           -->
  <!-- ==================================================================== -->
@@ -67,6 +67,44 @@
     I am a visual designer who beautifully translates brand values into visual form. I specialize in creating sophisticated UI/UX designs and artwork using Figma.
    </p>
   </header>
+
+  <!-- Selected Works (3 Items maximum) -->
+  <section class="mb-16 md:mb-24">
+    <h2 class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-8 flex items-center gap-2">
+      <span>Selected Works</span>
+      <span class="h-[1px] bg-slate-200 flex-grow"></span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Work 1 -->
+      <div class="minimal-card rounded-xl p-4 flex flex-col justify-between h-full">
+        <div>
+          <!-- 自動スクロールカルーセルのコンテナ（相対配置） -->
+          <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-100 border border-slate-100 mb-4 relative group">
+            <!-- スライドを包むインナー。snap機能でスワイプ感も心地よく -->
+            <div class="flex w-full h-full overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar" id="carousel-1">
+              <div class="w-full h-full shrink-0 snap-start">
+                <img src="https://placehold.co/600x450/3b82f6/FFFFFF?text=UI/UX+Console+1" alt="Console UI A" class="w-full h-full object-cover">
+              </div>
+              <div class="w-full h-full shrink-0 snap-start">
+                <img src="https://placehold.co/600x450/1d4ed8/FFFFFF?text=UI/UX+Console+2" alt="Console UI B" class="w-full h-full object-cover">
+              </div>
+              <div class="w-full h-full shrink-0 snap-start">
+                <img src="https://placehold.co/600x450/60a5fa/FFFFFF?text=UI/UX+Console+3" alt="Console UI C" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <!-- インジケータードット。初期状態は最初のドットが w-3 で横長 -->
+            <div class="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1 z-10 bg-slate-950/40 px-2 py-1 rounded-full backdrop-blur-sm pointer-events-none" id="dots-1">
+              <span class="w-3 h-1.5 rounded-full bg-white/40 transition-all duration-300"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white/40 transition-all duration-300"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white/40 transition-all duration-300"></span>
+            </div>
+          </div>
+          <span class="text-[10px] font-bold text-blue-600 tracking-wider uppercase">UI/UX Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
  </main>
  </body>
 </html>
